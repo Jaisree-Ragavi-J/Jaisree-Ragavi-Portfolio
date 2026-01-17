@@ -60,7 +60,7 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6"
             >
-              {["IT Student", "Cloud Computing Enthusiast", "MERN Developer"].map((title, i) => (
+              {["Cloud Computing Enthusiast", "DevOps Learner", "MERN Developer"].map((title, i) => (
                 <span
                   key={title}
                   className="px-4 py-1.5 bg-secondary text-secondary-foreground rounded-full text-sm font-medium"
