@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, Code, ExternalLink } from "lucide-react";
+import { Mail, Phone, Code, ExternalLink, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
@@ -15,6 +15,24 @@ const contactInfo = [
     label: "Phone",
     value: "+91 9360972714",
     href: "tel:+919360972714",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "Connect with me",
+    href: "https://www.linkedin.com/in/jaisree-ragavi-j",
+  },
+  {
+    icon: Twitter,
+    label: "Twitter / X",
+    value: "@jsrv_j_official",
+    href: "https://twitter.com/jsrv_j_official",
+  },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    value: "Subscribe",
+    href: "https://www.youtube.com/@jaisreeragavij3151",
   },
   {
     icon: Code,

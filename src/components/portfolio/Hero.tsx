@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, FileText, Mail, Eye } from "lucide-react";
+import { ArrowDown, FileText, Mail, Eye, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
 
@@ -107,6 +107,39 @@ export const Hero = () => {
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
               </Button>
+            </motion.div>
+
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="flex justify-center lg:justify-start gap-4 mt-6"
+            >
+              <a
+                href="https://www.linkedin.com/in/jaisree-ragavi-j"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://twitter.com/jsrv_j_official"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
+              >
+                <Twitter className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://www.youtube.com/@jaisreeragavij3151"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
+              >
+                <Youtube className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
             </motion.div>
           </div>
         </div>
