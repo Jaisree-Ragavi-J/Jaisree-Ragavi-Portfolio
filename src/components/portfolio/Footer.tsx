@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Github, Heart, Linkedin, Twitter, Youtube } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -29,6 +29,14 @@ export const Footer = () => {
             className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
           >
             <Youtube className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </a>
+          <a
+            href="https://github.com/Jaisree-Ragavi-J"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
+          >
+            <Github className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
           </a>
         </div>
         <motion.p
