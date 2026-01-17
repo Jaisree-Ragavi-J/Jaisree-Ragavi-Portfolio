@@ -6,8 +6,13 @@ import blockchainImage from "@/assets/blockchain-presentation.jpg";
 import vervathonImage from "@/assets/vervathon.jpg";
 import speakerImage from "@/assets/speaker-forum.jpeg";
 import bestEngineerImage from "@/assets/best-engineer.jpeg";
+import iitRoparImage from "@/assets/iit-ropar-interaction.png";
+import silverTicketImage from "@/assets/silver-ticket.png";
+import mocEnglishImage from "@/assets/moc-english-club.png";
+import ieiQuantumImage from "@/assets/iei-quantum-conference.png";
 
 const galleryImages = [
+  // Existing photos first
   {
     src: blockchainImage,
     title: "Blockchain Paper Presentation",
@@ -27,6 +32,27 @@ const galleryImages = [
     src: bestEngineerImage,
     title: "Best Engineering Student Award",
     category: "Awards",
+  },
+  // New photos
+  {
+    src: iitRoparImage,
+    title: "Internship IIT Ropar - Prof Sudarshan Iyenger Sir Interaction",
+    category: "Internship",
+  },
+  {
+    src: silverTicketImage,
+    title: "Silver Ticket Holder",
+    category: "Awards",
+  },
+  {
+    src: mocEnglishImage,
+    title: "MoC - The English Club",
+    category: "Leadership",
+  },
+  {
+    src: ieiQuantumImage,
+    title: "President IEI (SLC) - Quantum Computing Conference",
+    category: "Leadership",
   },
 ];
 
