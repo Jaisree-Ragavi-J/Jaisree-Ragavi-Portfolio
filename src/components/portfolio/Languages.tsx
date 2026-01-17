@@ -5,8 +5,8 @@ import { Globe } from "lucide-react";
 const languages = [
   { name: "Tamil", level: "Native", proficiency: 100 },
   { name: "English", level: "Fluent", proficiency: 95 },
-  { name: "Hindi", level: "BA Level", proficiency: 70 },
-  { name: "Sanskrit", level: "Basic Reading/Writing", proficiency: 40 },
+  { name: "Hindi", level: "BA Level", proficiency: 80 },
+  { name: "Sanskrit", level: "Basic Reading/Writing", proficiency: 70 },
 ];
 
 export const Languages = () => {
