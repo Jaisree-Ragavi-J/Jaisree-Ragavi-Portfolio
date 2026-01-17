@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, Code, ExternalLink, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Mail, Phone, Code, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
@@ -9,30 +9,6 @@ const contactInfo = [
     label: "Email",
     value: "vijaisreeragavi@gmail.com",
     href: "mailto:vijaisreeragavi@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+91 9360972714",
-    href: "tel:+919360972714",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "Connect with me",
-    href: "https://www.linkedin.com/in/jaisree-ragavi-j",
-  },
-  {
-    icon: Twitter,
-    label: "Twitter / X",
-    value: "@jsrv_j_official",
-    href: "https://twitter.com/jsrv_j_official",
-  },
-  {
-    icon: Youtube,
-    label: "YouTube",
-    value: "Subscribe",
-    href: "https://www.youtube.com/@jaisreeragavij3151",
   },
   {
     icon: Code,
@@ -98,14 +74,8 @@ export const Contact = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="mt-8 pt-8 border-t border-border text-center"
             >
-              <p className="text-muted-foreground mb-6">
-                Open to internship opportunities and collaborations
-              </p>
-              <Button
-                size="lg"
-                className="neon-glow"
-                asChild
-              >
+              <p className="text-muted-foreground mb-6">Open to internship opportunities and collaborations</p>
+              <Button size="lg" className="neon-glow" asChild>
                 <a href="mailto:vijaisreeragavi@gmail.com">
                   <Mail className="mr-2 h-5 w-5" />
                   Send an Email
