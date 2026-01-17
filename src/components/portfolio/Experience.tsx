@@ -12,7 +12,7 @@ const experiences = [
       "MERN stack learning via Vibe platform",
       "Real-world case studies and practical implementation",
       "Cleared viva with Silver Ticket recognition",
-      "Received peer endorsements for collaborative work",
+      "Endrosed peers for collaborative work",
       "Contributed to Spandan project features",
     ],
   },
