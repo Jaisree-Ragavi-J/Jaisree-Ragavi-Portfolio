@@ -21,23 +21,22 @@ const experiences = [
 const education = [
   {
     type: "education",
-    title: "B.Tech Information Technology",
+    title: "B.Tech Information Technology (Hons. in Cloud Computing)",
     organization: "Sona College of Technology, Salem",
     period: "2022 – 2026",
     grade: "CGPA: 8.88",
-    specialization: "Cloud Computing & Full Stack",
   },
   {
     type: "education",
     title: "Higher Secondary (HSC)",
-    organization: "12th Standard",
+    organization: "Barathi Vidya Bhavan Matriculation Higher Secondary School, Erode ",
     period: "2022",
     grade: "93.8%",
   },
   {
     type: "education",
     title: "Secondary School (SSLC)",
-    organization: "10th Standard",
+    organization: "Kalaimagal Kalvi Nilayam Girls’ Matriculation School, Erode",
     period: "2020",
     grade: "87.6%",
   },
