@@ -22,7 +22,7 @@ const education = [
   {
     type: "education",
     title: "B.Tech Information Technology",
-    organization: "Bannari Amman Institute of Technology",
+    organization: "Sona College of Technology, Salem",
     period: "2022 – 2026",
     grade: "CGPA: 8.88",
     specialization: "Cloud Computing & Full Stack",
@@ -77,7 +77,7 @@ export const Experience = () => {
 
             <div className="relative">
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent" />
-              
+
               {experiences.map((exp, index) => (
                 <motion.div
                   key={exp.title}
@@ -127,7 +127,7 @@ export const Experience = () => {
 
             <div className="relative">
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent" />
-              
+
               {education.map((edu, index) => (
                 <motion.div
                   key={edu.title}
