@@ -144,11 +144,6 @@ export const Experience = () => {
                       <span className="px-3 py-1 bg-accent/20 text-accent text-sm rounded-full font-medium">
                         {edu.grade}
                       </span>
-                      {edu.specialization && (
-                        <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full">
-                          {edu.specialization}
-                        </span>
-                      )}
                     </div>
                   </div>
                 </motion.div>
