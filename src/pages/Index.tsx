@@ -1,12 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from "react";
+import { Navigation } from "@/components/portfolio/Navigation";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Experience } from "@/components/portfolio/Experience";
+import { Projects } from "@/components/portfolio/Projects";
+import { Achievements } from "@/components/portfolio/Achievements";
+import { Leadership } from "@/components/portfolio/Leadership";
+import { Gallery } from "@/components/portfolio/Gallery";
+import { Languages } from "@/components/portfolio/Languages";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
 
 const Index = () => {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+  }, [isDark]);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation isDark={isDark} toggleTheme={() => setIsDark(!isDark)} />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Achievements />
+      <Leadership />
+      <Gallery />
+      <Languages />
+      <Contact />
+      <Footer />
     </div>
   );
 };
