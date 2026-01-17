@@ -5,15 +5,18 @@ import profileImage from "@/assets/profile.jpg";
 
 export const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-    >
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-glow/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-glow/10 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "2s" }}
+        />
       </div>
 
       <div className="section-container relative z-10">
@@ -26,11 +29,7 @@ export const Hero = () => {
             className="relative"
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden neon-border p-1">
-              <img
-                src={profileImage}
-                alt="Jaisree Ragavi J"
-                className="w-full h-full object-cover rounded-full"
-              />
+              <img src={profileImage} alt="Jaisree Ragavi J" className="w-full h-full object-cover rounded-full" />
             </div>
             <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-primary/30 rounded-full blur-2xl" />
           </motion.div>
@@ -45,7 +44,7 @@ export const Hero = () => {
             >
               Hello, I'm
             </motion.p>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -61,7 +60,7 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6"
             >
-              {["IT Student", "MERN Developer", "Cloud Computing Enthusiast"].map((title, i) => (
+              {["IT Student", "Cloud Computing Enthusiast", "MERN Developer"].map((title, i) => (
                 <span
                   key={title}
                   className="px-4 py-1.5 bg-secondary text-secondary-foreground rounded-full text-sm font-medium"
@@ -94,12 +93,7 @@ export const Hero = () => {
                 <Eye className="mr-2 h-5 w-5" />
                 View Projects
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary/50 hover:bg-primary/10"
-                asChild
-              >
+              <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
                 <a href="/Jaisree_Ragavi_Resume.pdf" download>
                   <FileText className="mr-2 h-5 w-5" />
                   Download Resume
