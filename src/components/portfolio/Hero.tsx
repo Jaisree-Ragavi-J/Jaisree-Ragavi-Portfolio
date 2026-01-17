@@ -94,7 +94,7 @@ export const Hero = () => {
                 View Projects
               </Button>
               <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
-                <a href="/Jaisree_Ragavi_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1rJ7VdaNXqpXHZ57g6p6roRN21jGtQ_aD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
