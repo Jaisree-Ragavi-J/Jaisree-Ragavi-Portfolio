@@ -6,7 +6,8 @@ const projects = [
   {
     title: "Campus Interview Cracker",
     type: "Mini Project",
-    description: "A comprehensive platform designed to help students prepare for campus placements with practice questions, mock interviews, and preparation resources.",
+    description:
+      "A comprehensive platform designed to help students prepare for campus placements with practice questions, mock interviews, and preparation resources.",
     tags: ["Full Stack", "Web Development", "Education"],
     icon: Cpu,
     highlight: null,
@@ -14,22 +15,25 @@ const projects = [
   {
     title: "3D Model Generation from Text",
     type: "Hackathon Project",
-    description: "AI-powered application that generates 3D models from text descriptions, showcasing the intersection of NLP and computer graphics.",
+    description:
+      "AI-powered application that generates 3D models from text descriptions, showcasing the intersection of NLP and computer graphics.",
     tags: ["AI/ML", "3D Graphics", "Innovation"],
     icon: Trophy,
-    highlight: "Vervathon 1st Place 🏆",
+    highlight: "Verveathon 1st Place 🏆",
   },
   {
     title: "Graph Theory - Dynex Moonshots",
     type: "Capstone Project",
-    description: "Advanced graph theory implementation exploring quantum-inspired algorithms and optimization problems using the Dynex platform.",
+    description:
+      "Advanced graph theory implementation exploring quantum-inspired algorithms and optimization problems using the Dynex platform.",
     tags: ["Graph Theory", "Quantum Computing", "Research"],
     icon: Network,
   },
   {
     title: "Virtualized Lab Environment",
     type: "Honors Capstone",
-    description: "Cloud-based virtualized laboratory environment enabling remote access to computing resources for educational purposes.",
+    description:
+      "Cloud-based virtualized laboratory environment enabling remote access to computing resources for educational purposes.",
     tags: ["Cloud Computing", "Virtualization", "DevOps"],
     icon: Server,
   },
@@ -63,7 +67,7 @@ export const Projects = () => {
             >
               {/* Glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -80,16 +84,11 @@ export const Projects = () => {
                 <h3 className="text-xl font-semibold text-foreground mt-1 mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  {project.description}
-                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground text-xs rounded-full"
-                    >
+                    <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-xs rounded-full">
                       {tag}
                     </span>
                   ))}
