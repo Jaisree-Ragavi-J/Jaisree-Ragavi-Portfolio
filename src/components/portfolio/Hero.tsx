@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, FileText, Mail, Eye, Linkedin, Twitter, Youtube } from "lucide-react";
+import { ArrowDown, FileText, Mail, Eye, Linkedin, Twitter, Youtube, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
 
@@ -139,6 +139,14 @@ export const Hero = () => {
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
               >
                 <Youtube className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://github.com/Jaisree-Ragavi-J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
+              >
+                <Github className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
             </motion.div>
           </div>
