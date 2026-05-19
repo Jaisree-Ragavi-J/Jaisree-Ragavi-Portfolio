@@ -6,14 +6,27 @@ const experiences = [
   {
     type: "experience",
     title: "Winter Intern",
-    organization: "IIT Ropar",
+    organization: "NPTEL – IIT Ropar",
     period: "Dec 2025 – Jan 2026",
+    badge: "Silver Ticket",
     highlights: [
-      "MERN stack learning via Vibe platform",
-      "Real-world case studies and practical implementation",
+      "Engaged in MERN stack learning via the Vibe platform",
+      "Worked on real-world case studies",
       "Cleared viva with Silver Ticket recognition",
-      "Endrosed peers for collaborative work",
+      "Endorsed peers for collaborative work",
       "Contributed to Spandan project features",
+    ],
+  },
+  {
+    type: "experience",
+    title: "MERN Stack Viva Assessor",
+    organization: "Annam.ai – IIT Ropar",
+    period: "Feb 2026 – May 2026",
+    badge: "Assessor",
+    highlights: [
+      "Conducted MERN stack viva assessments",
+      "Managed spreadsheets for performance tracking",
+      "Supported peer learning among learners",
     ],
   },
 ];
@@ -23,21 +36,21 @@ const education = [
     type: "education",
     title: "B.Tech Information Technology (Hons. in Cloud Computing)",
     organization: "Sona College of Technology, Salem",
-    period: "2022 – 2026",
-    grade: "CGPA: 8.88",
+    period: "Oct 2022 – April 2026",
+    grade: "CGPA: 8.97",
   },
   {
     type: "education",
     title: "Higher Secondary (HSC)",
-    organization: "Barathi Vidya Bhavan Matriculation Higher Secondary School, Erode ",
-    period: "2022",
+    organization: "Barathi Vidya Bhavan Matriculation Higher Secondary School, Erode",
+    period: "June 2021 – May 2022",
     grade: "93.8%",
   },
   {
     type: "education",
     title: "Secondary School (SSLC)",
     organization: "Kalaimagal Kalvi Nilayam Girls’ Matriculation School, Erode",
-    period: "2020",
+    period: "June 2019 – May 2020",
     grade: "87.6%",
   },
 ];
@@ -91,7 +104,7 @@ export const Experience = () => {
                       <h4 className="text-lg font-semibold text-foreground">{exp.title}</h4>
                       <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full flex items-center gap-1">
                         <Award className="h-3 w-3" />
-                        Silver Ticket
+                        {exp.badge}
                       </span>
                     </div>
                     <p className="text-primary font-medium mb-1">{exp.organization}</p>

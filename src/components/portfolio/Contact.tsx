@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, Code, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Code, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
@@ -9,6 +9,18 @@ const contactInfo = [
     label: "Email",
     value: "vijaisreeragavi@gmail.com",
     href: "mailto:vijaisreeragavi@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+91 93609 72714",
+    href: "tel:+919360972714",
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "7/1, Sri Bagavathi Nivas, Erode",
+    href: "#",
   },
   {
     icon: Code,

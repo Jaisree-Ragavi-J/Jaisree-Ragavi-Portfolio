@@ -24,28 +24,59 @@ const certifications = [
     icon: Medal,
     color: "text-gray-400",
   },
+  {
+    title: "Introduction to DevOps",
+    badge: "Coursera",
+    score: "",
+    icon: Award,
+    color: "text-primary",
+  },
+  {
+    title: "AWS AI Certified Practitioner",
+    badge: "Udemy",
+    score: "",
+    icon: Award,
+    color: "text-primary",
+  },
+  {
+    title: "Java DS & Algorithms + LeetCode",
+    badge: "Udemy",
+    score: "",
+    icon: Award,
+    color: "text-primary",
+  },
 ];
 
 const achievements = [
   {
-    title: "Academic Excellence Award",
-    description: "3 consecutive years of outstanding academic performance",
-    icon: Star,
+    title: "Best Outgoing Student",
+    description: "Overall performance in co-curricular activities – 29th Annual Day, Sona College of Technology",
+    icon: Trophy,
   },
   {
     title: "Dr. APJ Abdul Kalam Award",
-    description: "Best Engineering Student recognition",
+    description: "Best Engineering College Student – IEI, Salem Local Centre",
     icon: Trophy,
+  },
+  {
+    title: "Academic Excellence Award",
+    description: "4 consecutive years of outstanding academic performance",
+    icon: Star,
+  },
+  {
+    title: "Vervathon – 1st Place",
+    description: "3D Model Generation from Text",
+    icon: Trophy,
+  },
+  {
+    title: "Paper Presentation",
+    description: "Blockchain in Energy – 2nd Place (Synergy'24)",
+    icon: FileText,
   },
   {
     title: "Speaker's Forum",
     description: "3rd Place (Achieved Twice)",
     icon: Mic,
-  },
-  {
-    title: "Paper Presentation",
-    description: "Blockchain in Energy - 2nd Place",
-    icon: FileText,
   },
 ];
 
@@ -89,9 +120,11 @@ export const Achievements = () => {
                   <cert.icon className={`h-8 w-8 ${cert.color}`} />
                 </div>
                 <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 ${
-                  cert.badge === "Elite Gold" 
-                    ? "bg-yellow-500/20 text-yellow-500" 
-                    : "bg-gray-400/20 text-gray-400"
+                  cert.badge === "Elite Gold"
+                    ? "bg-yellow-500/20 text-yellow-500"
+                    : cert.badge === "Elite Silver"
+                    ? "bg-gray-400/20 text-gray-400"
+                    : "bg-primary/20 text-primary"
                 }`}>
                   {cert.badge}
                 </span>
