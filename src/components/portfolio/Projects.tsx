@@ -4,8 +4,17 @@ import { Trophy, Cpu, Network, Server, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Kanibee Academy Learning Platform",
+    type: "Final Year Project (2025–2026)",
+    description:
+      "A modern learning platform built as the final year project. Paper selected at the IGCCT 2026 Conference, ECE Department, Sona College of Technology, Salem.",
+    tags: ["Full Stack", "EdTech", "MERN"],
+    icon: Cpu,
+    highlight: "IGCCT 2026 Paper ✨",
+  },
+  {
     title: "Campus Interview Cracker",
-    type: "Mini Project",
+    type: "Mini Project (2024–2025)",
     description:
       "A comprehensive platform designed to help students prepare for campus placements with practice questions, mock interviews, and preparation resources.",
     tags: ["Full Stack", "Web Development", "Education"],
@@ -14,24 +23,24 @@ const projects = [
   },
   {
     title: "3D Model Generation from Text",
-    type: "Hackathon Project",
+    type: "Vervathon (2024–2025)",
     description:
       "AI-powered application that generates 3D models from text descriptions, showcasing the intersection of NLP and computer graphics.",
     tags: ["AI/ML", "3D Graphics", "Innovation"],
     icon: Trophy,
-    highlight: "Verveathon 1st Place 🏆",
+    highlight: "Vervathon 1st Place 🏆",
   },
   {
-    title: "Graph Theory - Dynex Moonshots",
-    type: "Capstone Project",
+    title: "Graph Theory – Dynex Moonshots",
+    type: "Capstone Project (2024–2025)",
     description:
       "Advanced graph theory implementation exploring quantum-inspired algorithms and optimization problems using the Dynex platform.",
     tags: ["Graph Theory", "Quantum Computing", "Research"],
     icon: Network,
   },
   {
-    title: "Virtualized Lab Environment",
-    type: "Honors Capstone",
+    title: "Virtualized Lab Environment for Remote Learning",
+    type: "Honors Capstone (2024–2025)",
     description:
       "Cloud-based virtualized laboratory environment enabling remote access to computing resources for educational purposes.",
     tags: ["Cloud Computing", "Virtualization", "DevOps"],

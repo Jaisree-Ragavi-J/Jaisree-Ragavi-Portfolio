@@ -37,12 +37,12 @@ export const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-6 text-foreground">Career Objective</h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Eager and dedicated IT undergraduate with a passion for technology and a strong 
-              foundation in cloud computing and full-stack development. Recognized for academic 
-              excellence and proactive involvement in technical and leadership activities. Seeking 
-              an internship or entry-level opportunity to apply my skills, learn from industry 
-              professionals, and contribute to innovative projects while growing in a dynamic 
-              tech environment.
+              Newly graduated IT professional with practical expertise in cloud, networking, and
+              full-stack development. Ready to contribute code, infrastructure know-how, and a
+              builder mindset from day one. Eager to leverage practical knowledge and a strong
+              learning mindset to contribute meaningfully to innovative projects within a dynamic
+              enterprise environment. Committed to continuous growth and delivering impactful
+              technological solutions.
             </p>
           </motion.div>
 
