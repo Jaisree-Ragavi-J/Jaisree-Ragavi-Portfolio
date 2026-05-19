@@ -49,14 +49,14 @@ const certifications = [
 
 const achievements = [
   {
+    title: "BOS – Overall Co-curricular & Star Performer",
+    description: "Best Outgoing Student – 29th Annual Day, Sona College of Technology",
+    icon: Trophy,
+  },
+  {
     title: "NPTEL Discipline Star / Research Internship",
     description: "Research Internship at IIT Ropar & Discipline Star recognition – Inspiring Awards 2026",
     icon: Star,
-  },
-  {
-    title: "Best Outgoing Student",
-    description: "Overall performance in co-curricular activities – 29th Annual Day, Sona College of Technology",
-    icon: Trophy,
   },
   {
     title: "Dr. APJ Abdul Kalam Award",
