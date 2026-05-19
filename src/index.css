@@ -57,30 +57,30 @@
     --popover: 330 40% 9%;
     --popover-foreground: 330 20% 95%;
 
-    --primary: 328 75% 50%;
-    --primary-foreground: 330 50% 5%;
+    --primary: 335 72% 48%;
+    --primary-foreground: 335 50% 5%;
 
-    --secondary: 330 30% 16%;
-    --secondary-foreground: 330 20% 90%;
+    --secondary: 335 30% 16%;
+    --secondary-foreground: 332 20% 92%;
 
-    --muted: 330 25% 15%;
-    --muted-foreground: 330 15% 60%;
+    --muted: 335 25% 15%;
+    --muted-foreground: 332 15% 62%;
 
-    --accent: 320 80% 55%;
-    --accent-foreground: 330 50% 5%;
+    --accent: 335 80% 58%;
+    --accent-foreground: 335 50% 5%;
 
     --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 330 30% 19%;
-    --input: 330 30% 19%;
-    --ring: 328 75% 50%;
+    --border: 335 30% 20%;
+    --input: 335 30% 20%;
+    --ring: 335 72% 48%;
 
     /* Custom wine palette */
-    --rose-glow: 325 95% 70%;
-    --rose-deep: 330 65% 10%;
-    --rose-soft: 325 30% 32%;
-    --neon-rose: 325 95% 65%;
+    --rose-glow: 335 90% 65%;
+    --rose-deep: 335 65% 10%;
+    --rose-soft: 332 30% 32%;
+    --neon-rose: 335 90% 60%;
     
     /* Glassmorphism */
     --glass-bg: 330 40% 13% / 0.6;
