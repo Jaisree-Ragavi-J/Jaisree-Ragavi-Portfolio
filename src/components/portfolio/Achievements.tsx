@@ -64,9 +64,14 @@ const achievements = [
     icon: Trophy,
   },
   {
-    title: "Rank Holder - Academic Excellence",
-    description: "1st Rank in 6th Sem & 3rd Rank in 7th Sem — 4 consecutive years of outstanding performance",
+    title: "Rank Holder",
+    description: "1st Rank in 6th Sem & 3rd Rank in 7th Sem",
     icon: Star,
+  },
+  {
+    title: "Academic Excellence Award",
+    description: "4 consecutive years of outstanding academic performance",
+    icon: Award,
   },
   {
     title: "Vervathon – 1st Place",
