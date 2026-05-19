@@ -28,8 +28,8 @@ export const Hero = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden neon-border p-1">
-              <img src={profileImage} alt="Jaisree Ragavi J" className="w-full h-full object-cover rounded-full" />
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden neon-border p-1 bg-secondary/40">
+              <img src={profileImage} alt="Jaisree Ragavi J" className="w-full h-full object-cover object-top rounded-full scale-90" />
             </div>
             <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-primary/30 rounded-full blur-2xl" />
           </motion.div>
