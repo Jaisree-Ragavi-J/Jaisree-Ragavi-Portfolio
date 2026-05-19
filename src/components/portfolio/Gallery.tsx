@@ -10,6 +10,10 @@ import iitRoparImage from "@/assets/iit-ropar-interaction.png";
 import silverTicketImage from "@/assets/silver-ticket.png";
 import mocEnglishImage from "@/assets/moc-english-club.png";
 import ieiQuantumImage from "@/assets/iei-quantum-conference.png";
+import nptelBestPerformerImage from "@/assets/nptel-best-performer.jpeg";
+import inspiringAwardsImage from "@/assets/inspiring-awards-2026.jpeg";
+import bestOutgoingStudentImage from "@/assets/best-outgoing-student.jpeg";
+import academicRankImage from "@/assets/academic-rank-certificates.jpeg";
 
 const galleryImages = [
   // Existing photos first
@@ -33,7 +37,6 @@ const galleryImages = [
     title: "Best Engineering Student Award",
     category: "Awards",
   },
-  // New photos
   {
     src: iitRoparImage,
     title: "Internship IIT Ropar - Prof Sudarshan Iyenger Sir Interaction",
@@ -53,6 +56,27 @@ const galleryImages = [
     src: ieiQuantumImage,
     title: "President IEI (SLC) - Quantum Computing Conference",
     category: "Leadership",
+  },
+  // Newly added
+  {
+    src: nptelBestPerformerImage,
+    title: "NPTEL Best Performer - Research Intern, IIT Ropar",
+    category: "Internship",
+  },
+  {
+    src: inspiringAwardsImage,
+    title: "Star Performer - Inspiring Awards 2026",
+    category: "Awards",
+  },
+  {
+    src: bestOutgoingStudentImage,
+    title: "Best Outgoing Student - Overall Co-curricular",
+    category: "Awards",
+  },
+  {
+    src: academicRankImage,
+    title: "Academic Excellence - 1st Rank (Sem VI) & 3rd Rank (Sem VII)",
+    category: "Academics",
   },
 ];
 
