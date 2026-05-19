@@ -29,7 +29,14 @@ export const Hero = () => {
             className="relative"
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden neon-border p-1 bg-secondary/40">
-              <img src={profileImage} alt="Jaisree Ragavi J" className="w-full h-full object-cover object-top rounded-full scale-95 -translate-y-2" />
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img
+                  src={profileImage}
+                  alt="Jaisree Ragavi J"
+                  className="w-full h-full object-cover rounded-full"
+                  style={{ objectPosition: "center 18%" }}
+                />
+              </div>
             </div>
             <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-primary/30 rounded-full blur-2xl" />
           </motion.div>
