@@ -34,10 +34,10 @@ const experiences = [
 const education = [
   {
     type: "education",
-    title: "B.Tech Information Technology (Hons. in Cloud Computing)",
+    title: "B.Tech Information Technology – First Class with Distinction, Honours in Cloud Computing",
     organization: "Sona College of Technology, Salem",
     period: "Oct 2022 – April 2026",
-    grade: "CGPA: 8.97",
+    grade: "CGPA: 8.97/10",
   },
   {
     type: "education",
