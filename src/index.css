@@ -14,32 +14,32 @@
     --popover: 330 25% 98%;
     --popover-foreground: 330 50% 10%;
 
-    --primary: 335 62% 32%;
+    --primary: 322 55% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 332 45% 94%;
-    --secondary-foreground: 335 55% 18%;
+    --secondary: 322 40% 94%;
+    --secondary-foreground: 322 55% 18%;
 
-    --muted: 332 18% 92%;
-    --muted-foreground: 332 15% 38%;
+    --muted: 322 18% 92%;
+    --muted-foreground: 322 15% 38%;
 
-    --accent: 335 70% 42%;
+    --accent: 322 60% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 332 20% 86%;
-    --input: 332 20% 86%;
-    --ring: 335 62% 32%;
+    --border: 322 20% 86%;
+    --input: 322 20% 86%;
+    --ring: 322 55% 30%;
 
     --radius: 0.75rem;
 
-    /* Custom wine palette */
-    --rose-glow: 335 80% 55%;
-    --rose-deep: 335 65% 18%;
-    --rose-soft: 332 35% 78%;
-    --neon-rose: 335 85% 50%;
+    /* Custom wine palette - sampled from shawl */
+    --rose-glow: 322 65% 50%;
+    --rose-deep: 322 60% 18%;
+    --rose-soft: 322 35% 78%;
+    --neon-rose: 322 70% 45%;
     
     /* Glassmorphism */
     --glass-bg: 330 25% 98% / 0.7;
@@ -57,30 +57,30 @@
     --popover: 330 40% 9%;
     --popover-foreground: 330 20% 95%;
 
-    --primary: 335 72% 48%;
-    --primary-foreground: 335 50% 5%;
+    --primary: 322 60% 42%;
+    --primary-foreground: 322 50% 5%;
 
-    --secondary: 335 30% 16%;
-    --secondary-foreground: 332 20% 92%;
+    --secondary: 322 30% 16%;
+    --secondary-foreground: 322 20% 92%;
 
-    --muted: 335 25% 15%;
-    --muted-foreground: 332 15% 62%;
+    --muted: 322 25% 15%;
+    --muted-foreground: 322 15% 62%;
 
-    --accent: 335 80% 58%;
-    --accent-foreground: 335 50% 5%;
+    --accent: 322 70% 52%;
+    --accent-foreground: 322 50% 5%;
 
     --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 335 30% 20%;
-    --input: 335 30% 20%;
-    --ring: 335 72% 48%;
+    --border: 322 30% 20%;
+    --input: 322 30% 20%;
+    --ring: 322 60% 42%;
 
-    /* Custom wine palette */
-    --rose-glow: 335 90% 65%;
-    --rose-deep: 335 65% 10%;
-    --rose-soft: 332 30% 32%;
-    --neon-rose: 335 90% 60%;
+    /* Custom wine palette - sampled from shawl */
+    --rose-glow: 322 75% 58%;
+    --rose-deep: 322 60% 10%;
+    --rose-soft: 322 30% 32%;
+    --neon-rose: 322 80% 55%;
     
     /* Glassmorphism */
     --glass-bg: 330 40% 13% / 0.6;
