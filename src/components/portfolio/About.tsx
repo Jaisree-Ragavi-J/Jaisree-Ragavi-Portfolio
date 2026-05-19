@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { MessageCircle, Zap, Heart, BookOpen, Users } from "lucide-react";
+import { MessageCircle, Zap, Heart, BookOpen, Users, Puzzle } from "lucide-react";
 
 const traits = [
   { name: "Excellent Communicator", icon: MessageCircle },
@@ -9,6 +9,7 @@ const traits = [
   { name: "Empathetic", icon: Heart },
   { name: "Quick Learner", icon: BookOpen },
   { name: "Team Player", icon: Users },
+  { name: "Problem Solver", icon: Puzzle },
 ];
 
 export const About = () => {
