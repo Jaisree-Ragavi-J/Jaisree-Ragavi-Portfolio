@@ -65,7 +65,7 @@ const galleryImages = [
   },
   {
     src: inspiringAwardsImage,
-    title: "Star Performer - Inspiring Awards 2026",
+    title: "NPTEL Research Intern / Discipline Star - Inspiring Awards 2026",
     category: "Awards",
   },
   {
