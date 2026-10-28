@@ -1,66 +1,29 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Globe, Cloud, Monitor } from "lucide-react";
+import { Code, Cloud, Monitor, Workflow } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Programming Languages",
+    title: "Programming & Fundamentals",
     icon: Code,
-    skills: [
-      { name: "Java", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "C", level: 80 },
-    ],
+    skills: ["Java", "Python", "C", "Data Structures & Algorithms"],
   },
   {
-    title: "Web Development",
-    icon: Globe,
-    skills: [
-      { name: "HTML/CSS", level: 95 },
-      { name: "JavaScript", level: 85 },
-      { name: "MERN Stack", level: 80 },
-    ],
+    title: "CI/CD & Automation",
+    icon: Workflow,
+    skills: ["Git", "GitHub", "GitHub Enterprise", "GitHub Actions", "YAML", "PowerShell"],
   },
   {
-    title: "Cloud & Networking",
+    title: "Code Quality & Build",
     icon: Cloud,
-    skills: [
-      { name: "Cloud Computing", level: 88 },
-      { name: "TCP/IP, LAN/WAN", level: 82 },
-      { name: "OSI Model", level: 85 },
-    ],
+    skills: ["Coverity", "SonarQube", ".NET SDK", "Node.js", "Electron"],
   },
   {
-    title: "Operating Systems",
+    title: "Cloud & Systems",
     icon: Monitor,
-    skills: [
-      { name: "Windows", level: 90 },
-      { name: "Linux CLI", level: 75 },
-    ],
+    skills: ["Cloud Computing", "Computer Networks", "Windows", "Linux CLI", "MERN Stack"],
   },
 ];
-
-const SkillBar = ({ name, level, delay }: { name: string; level: number; delay: number }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  return (
-    <div ref={ref} className="space-y-2">
-      <div className="flex justify-between text-sm">
-        <span className="text-foreground font-medium">{name}</span>
-        <span className="text-muted-foreground">{level}%</span>
-      </div>
-      <div className="h-2 bg-secondary rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={isInView ? { width: `${level}%` } : {}}
-          transition={{ duration: 1, delay, ease: "easeOut" }}
-          className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
-        />
-      </div>
-    </div>
-  );
-};
 
 export const Skills = () => {
   const ref = useRef(null);
@@ -79,14 +42,14 @@ export const Skills = () => {
           <p className="section-subtitle">Technologies and tools I work with</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-6 md:grid-cols-2">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-              className="glass-card rounded-2xl p-6"
+              className="glass-card rounded-2xl p-6 md:p-8"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
@@ -94,14 +57,11 @@ export const Skills = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
               </div>
-              <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <SkillBar
-                    key={skill.name}
-                    name={skill.name}
-                    level={skill.level}
-                    delay={0.2 + categoryIndex * 0.1 + skillIndex * 0.1}
-                  />
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span key={skill} className="rounded-full border border-border bg-secondary/70 px-3 py-1.5 text-sm font-medium text-secondary-foreground">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>

@@ -3,10 +3,10 @@ import { useRef } from "react";
 import { Globe } from "lucide-react";
 
 const languages = [
-  { name: "Tamil", level: "Native", proficiency: 100 },
-  { name: "English", level: "Fluent", proficiency: 95 },
-  { name: "Hindi", level: "BA Level", proficiency: 80 },
-  { name: "Sanskrit", level: "Basic Reading/Writing", proficiency: 70 },
+  { name: "Tamil", level: "Native" },
+  { name: "English", level: "Fluent" },
+  { name: "Hindi", level: "BA Level" },
+  { name: "Sanskrit", level: "Basic Reading/Writing" },
 ];
 
 export const Languages = () => {
@@ -36,25 +36,18 @@ export const Languages = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="glass-card rounded-xl p-6"
               >
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
                       <Globe className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">{lang.name}</h4>
-                      <span className="text-sm text-muted-foreground">{lang.level}</span>
                     </div>
                   </div>
-                  <span className="text-primary font-bold">{lang.proficiency}%</span>
-                </div>
-                <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    animate={isInView ? { width: `${lang.proficiency}%` } : {}}
-                    transition={{ duration: 1, delay: 0.3 + index * 0.1, ease: "easeOut" }}
-                    className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
-                  />
+                  <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                    {lang.level}
+                  </span>
                 </div>
               </motion.div>
             ))}

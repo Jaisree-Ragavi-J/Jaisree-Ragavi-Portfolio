@@ -1,5 +1,5 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 
 import blockchainImage from "@/assets/blockchain-presentation.jpg";
@@ -84,6 +84,26 @@ export const Gallery = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (!selectedImage) return;
+
+    closeButtonRef.current?.focus();
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSelectedImage(null);
+      if (event.key === "Tab") {
+        event.preventDefault();
+        closeButtonRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      triggerRef.current?.focus();
+    };
+  }, [selectedImage]);
 
   return (
     <section id="gallery" className="gradient-bg">
@@ -100,13 +120,18 @@ export const Gallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <motion.div
+            <motion.button
+              type="button"
+              aria-label={`View ${image.title}`}
               key={image.title}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="relative group cursor-pointer overflow-hidden rounded-xl aspect-square"
-              onClick={() => setSelectedImage(image)}
+              className="relative group w-full cursor-pointer overflow-hidden rounded-xl aspect-square text-left"
+              onClick={(event) => {
+                triggerRef.current = event.currentTarget;
+                setSelectedImage(image);
+              }}
             >
               <img
                 src={image.src}
@@ -121,7 +146,7 @@ export const Gallery = () => {
                   <h4 className="text-foreground font-semibold mt-1">{image.title}</h4>
                 </div>
               </div>
-            </motion.div>
+            </motion.button>
           ))}
         </div>
       </div>
@@ -130,6 +155,9 @@ export const Gallery = () => {
       <AnimatePresence>
         {selectedImage && (
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            aria-label={selectedImage.title}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -137,6 +165,9 @@ export const Gallery = () => {
             onClick={() => setSelectedImage(null)}
           >
             <motion.button
+              ref={closeButtonRef}
+              type="button"
+              aria-label="Close image"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
@@ -149,7 +180,7 @@ export const Gallery = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="max-w-4xl max-h-[80vh] overflow-hidden rounded-2xl"
+              className="relative max-w-4xl max-h-[80vh] overflow-hidden rounded-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <img

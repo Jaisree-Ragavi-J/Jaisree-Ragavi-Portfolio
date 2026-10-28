@@ -8,6 +8,7 @@ export const Footer = () => {
         <div className="flex justify-center gap-4 mb-4">
           <a
             href="https://www.linkedin.com/in/jaisree-ragavi-j"
+            aria-label="LinkedIn profile"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -16,6 +17,7 @@ export const Footer = () => {
           </a>
           <a
             href="https://twitter.com/jsrv_j_official"
+            aria-label="Twitter profile"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -24,6 +26,7 @@ export const Footer = () => {
           </a>
           <a
             href="https://www.youtube.com/@jaisreeragavij3151"
+            aria-label="YouTube channel"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -32,6 +35,7 @@ export const Footer = () => {
           </a>
           <a
             href="https://github.com/Jaisree-Ragavi-J"
+            aria-label="GitHub profile"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"

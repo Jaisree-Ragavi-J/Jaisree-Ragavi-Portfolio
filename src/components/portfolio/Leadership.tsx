@@ -21,6 +21,13 @@ const roles = [
     description: "Planning and executing entrepreneurship events, connecting students with industry mentors, and promoting startup culture.",
     icon: Lightbulb,
   },
+  {
+    title: "Resource Person & Guest Speaker",
+    organization: "Sona College of Technology, Salem",
+    description:
+      'Delivered the 2026 alumni webinar “DevOps — Continuous Everything” for II-year and III-year IT and AI & DS students, covering CI/CD, automation, testing, security, and monitoring.',
+    icon: Lightbulb,
+  },
 ];
 
 export const Leadership = () => {
@@ -40,7 +47,7 @@ export const Leadership = () => {
           <p className="section-subtitle">Roles where I've made an impact</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {roles.map((role, index) => (
             <motion.div
               key={role.title}

@@ -1,16 +1,16 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, Cpu, Network, Server, ExternalLink } from "lucide-react";
+import { Trophy, Cpu, Network, Server } from "lucide-react";
 
 const projects = [
   {
     title: "Kanibee Academy Learning Platform",
     type: "Final Year Project (2025–2026)",
     description:
-      "A modern learning platform built as the final year project. Paper selected at the IGCCT 2026 Conference, ECE Department, Sona College of Technology, Salem.",
+      "A modern learning platform built as the final year project. Paper selected at the ICGCCT 2026 Conference, ECE Department, Sona College of Technology, Salem.",
     tags: ["Full Stack", "EdTech", "MERN"],
     icon: Cpu,
-    highlight: "IGCCT 2026 Paper ✨",
+    highlight: "ICGCCT 2026 Paper ✨",
   },
   {
     title: "Campus Interview Cracker",

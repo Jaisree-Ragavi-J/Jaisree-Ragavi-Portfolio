@@ -9,7 +9,9 @@ const navItems = [
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
+  { name: "Leadership", href: "#leadership" },
   { name: "Gallery", href: "#gallery" },
+  { name: "Languages", href: "#languages" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -32,6 +34,7 @@ export const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
 
   return (
     <motion.nav
+      aria-label="Primary navigation"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -65,6 +68,8 @@ export const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
+              aria-label={`Switch to ${isDark ? "light" : "dark"} theme`}
+              aria-pressed={isDark}
               className="ml-2"
             >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
@@ -73,13 +78,22 @@ export const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-2">
-            <Button variant="ghost" size="icon" onClick={toggleTheme}>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${isDark ? "light" : "dark"} theme`}
+              aria-pressed={isDark}
+            >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -94,14 +108,15 @@ export const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
+            id="mobile-navigation"
             className="md:hidden glass-card mt-2 mx-4 rounded-lg overflow-hidden"
           >
-            <div className="py-4 px-6 flex flex-col gap-4">
+            <div className="flex flex-col gap-2 px-6 py-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors py-2"
+                  className="rounded-lg py-2 text-foreground transition-colors hover:bg-primary/10 hover:text-primary focus-visible:outline-none"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}

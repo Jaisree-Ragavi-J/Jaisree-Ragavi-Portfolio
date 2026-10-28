@@ -45,6 +45,13 @@ const certifications = [
     icon: Award,
     color: "text-primary",
   },
+  {
+    title: "Python for DevOps",
+    badge: "Udemy",
+    score: "",
+    icon: Award,
+    color: "text-primary",
+  },
 ];
 
 const achievements = [

@@ -19,8 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "7/1, Sri Bagavathi Nivas, Erode",
-    href: "#",
+    value: "Erode, Tamil Nadu",
   },
   {
     icon: Code,
@@ -56,27 +55,43 @@ export const Contact = () => {
           <div className="glass-card rounded-2xl p-8 md:p-12">
             <div className="space-y-6">
               {contactInfo.map((item, index) => (
-                <motion.a
+                <motion.div
                   key={item.label}
-                  href={item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-primary/10 transition-colors group"
+                  className="rounded-xl bg-secondary/50 transition-colors group"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <item.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm text-muted-foreground">{item.label}</p>
-                    <p className="text-foreground font-medium">{item.value}</p>
-                  </div>
-                  {item.href.startsWith("http") && (
-                    <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target={item.href.startsWith("http") ? "_blank" : undefined}
+                      rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="flex items-center gap-4 rounded-xl p-4 hover:bg-primary/10 focus-visible:outline-none"
+                    >
+                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/20 transition-transform group-hover:scale-110">
+                        <item.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-sm text-muted-foreground">{item.label}</p>
+                        <p className="font-medium text-foreground">{item.value}</p>
+                      </div>
+                      {item.href.startsWith("http") && (
+                        <ExternalLink className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+                      )}
+                    </a>
+                  ) : (
+                    <div className="flex items-center gap-4 p-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/20">
+                        <item.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">{item.label}</p>
+                        <p className="font-medium text-foreground">{item.value}</p>
+                      </div>
+                    </div>
                   )}
-                </motion.a>
+                </motion.div>
               ))}
             </div>
 
@@ -86,7 +101,7 @@ export const Contact = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="mt-8 pt-8 border-t border-border text-center"
             >
-              <p className="text-muted-foreground mb-6">Open to internship opportunities and collaborations</p>
+              <p className="text-muted-foreground mb-6">Feel free to reach out about my work or for technical collaboration.</p>
               <Button size="lg" className="neon-glow" asChild>
                 <a href="mailto:vijaisreeragavi@gmail.com">
                   <Mail className="mr-2 h-5 w-5" />

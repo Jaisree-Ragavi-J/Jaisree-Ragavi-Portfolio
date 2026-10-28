@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, FileText, Mail, Eye, Linkedin, Twitter, Youtube, Github } from "lucide-react";
+import { ArrowDown, Mail, Eye, Linkedin, Twitter, Youtube, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
 
@@ -67,7 +67,7 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6"
             >
-              {["Cloud Computing Enthusiast", "DevOps Learner", "MERN Developer"].map((title, i) => (
+              {["Graduate Engineer Trainee · GE Vernova", "CI/CD & Automation", "Cloud Computing Honours"].map((title) => (
                 <span
                   key={title}
                   className="px-4 py-1.5 bg-secondary text-secondary-foreground rounded-full text-sm font-medium"
@@ -83,7 +83,7 @@ export const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-xl md:text-2xl text-muted-foreground italic mb-8"
             >
-              "Turning ideas into impactful tech solutions."
+              "Building dependable software delivery pipelines through automation."
             </motion.p>
 
             <motion.div
@@ -99,12 +99,6 @@ export const Hero = () => {
               >
                 <Eye className="mr-2 h-5 w-5" />
                 View Projects
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
-                <a href="https://drive.google.com/file/d/19UqsJQ3PVTH4EWXAc2xOmksOmfHSPR4n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <FileText className="mr-2 h-5 w-5" />
-                  Download Resume
-                </a>
               </Button>
               <Button
                 size="lg"
@@ -125,6 +119,7 @@ export const Hero = () => {
             >
               <a
                 href="https://www.linkedin.com/in/jaisree-ragavi-j"
+                aria-label="LinkedIn profile"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -133,6 +128,7 @@ export const Hero = () => {
               </a>
               <a
                 href="https://twitter.com/jsrv_j_official"
+                aria-label="Twitter profile"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -141,6 +137,7 @@ export const Hero = () => {
               </a>
               <a
                 href="https://www.youtube.com/@jaisreeragavij3151"
+                aria-label="YouTube channel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"
@@ -149,6 +146,7 @@ export const Hero = () => {
               </a>
               <a
                 href="https://github.com/Jaisree-Ragavi-J"
+                aria-label="GitHub profile"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors group"

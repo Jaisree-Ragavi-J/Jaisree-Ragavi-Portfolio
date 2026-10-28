@@ -36,14 +36,14 @@ export const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="glass-card rounded-2xl p-8"
           >
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Career Objective</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-foreground">Professional Summary</h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Newly graduated IT professional with practical expertise in cloud, networking, and
-              full-stack development. Ready to contribute code, infrastructure know-how, and a
-              builder mindset from day one. Eager to leverage practical knowledge and a strong
-              learning mindset to contribute meaningfully to innovative projects within a dynamic
-              enterprise environment. Committed to continuous growth and delivering impactful
-              technological solutions.
+              Graduate Engineer Trainee at GE Vernova with hands-on experience in Git, GitHub
+              Actions, PowerShell scripting, and CI/CD automation. I develop and troubleshoot
+              Windows-based build pipelines, automate software packaging, and integrate Coverity
+              and SonarQube into CI workflows. I hold a B.Tech in Information Technology with
+              honours in Cloud Computing and a strong foundation in Java, data structures and
+              algorithms, and cloud computing.
             </p>
           </motion.div>
 

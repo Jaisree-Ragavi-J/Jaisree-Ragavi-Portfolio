@@ -4,29 +4,38 @@ import { Briefcase, GraduationCap, Award, CheckCircle } from "lucide-react";
 
 const experiences = [
   {
-    type: "experience",
-    title: "Winter Intern",
-    organization: "NPTEL – IIT Ropar",
-    period: "Dec 2025 – Jan 2026",
-    badge: "Silver Ticket",
+    title: "Graduate Engineer Trainee",
+    organization: "GE Vernova — Digital Software, Automation & Controls",
+    period: "June 2026 – Present",
+    badge: "Current role",
     highlights: [
-      "Engaged in MERN stack learning via the Vibe platform",
-      "Worked on real-world case studies",
-      "Cleared viva with Silver Ticket recognition",
-      "Endorsed peers for collaborative work",
-      "Contributed to Spandan project features",
+      "Develop and maintain GitHub Actions workflows for Windows-based software build and delivery pipelines.",
+      "Automate build, validation, and artifact-packaging processes using YAML and PowerShell.",
+      "Integrate Coverity static analysis into CI workflows.",
+      "Troubleshoot CI failures involving SDK configuration, dependencies, build environments, and artifact directories.",
+      "Validate build artifacts and packaging outputs for consistent software delivery.",
     ],
   },
   {
-    type: "experience",
-    title: "MERN Stack Viva Assessor",
-    organization: "Annam.ai – IIT Ropar",
-    period: "Feb 2026 – May 2026",
-    badge: "Assessor",
+    title: "Intern",
+    organization: "ANNAM.AI, IIT Ropar",
+    period: "February 2026 – May 2026",
+    badge: "Internship",
     highlights: [
-      "Conducted MERN stack viva assessments",
-      "Managed spreadsheets for performance tracking",
-      "Supported peer learning among learners",
+      "Conducted MERN stack viva assessments to evaluate learners' understanding of web development.",
+      "Maintained spreadsheets to track learner performance and assessment outcomes.",
+      "Supported peer learning and technical knowledge sharing.",
+    ],
+  },
+  {
+    title: "Winter Intern",
+    organization: "NPTEL Winter Internship — IIT Ropar",
+    period: "December 2025 – January 2026",
+    badge: "Silver Ticket",
+    highlights: [
+      "Explored MERN stack development through the Vibe platform and practical case studies.",
+      "Contributed to features for Spandan and participated in collaborative learning activities.",
+      "Completed the viva assessment and received Silver Ticket recognition.",
     ],
   },
 ];
@@ -102,7 +111,7 @@ export const Experience = () => {
                   <div className="glass-card rounded-xl p-6">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                       <h4 className="text-lg font-semibold text-foreground">{exp.title}</h4>
-                      <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full flex items-center gap-1">
+                      <span className="px-3 py-1 bg-primary/15 text-primary text-sm rounded-full flex items-center gap-1">
                         <Award className="h-3 w-3" />
                         {exp.badge}
                       </span>

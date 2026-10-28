@@ -22,16 +22,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation isDark={isDark} toggleTheme={() => setIsDark(!isDark)} />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Achievements />
-      <Leadership />
-      <Gallery />
-      <Languages />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Achievements />
+        <Leadership />
+        <Gallery />
+        <Languages />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
