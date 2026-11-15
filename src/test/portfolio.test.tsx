@@ -18,6 +18,9 @@ describe("portfolio", () => {
     linkedInLinks.forEach((link) =>
       expect(link).toHaveAttribute("href", "https://www.linkedin.com/in/jaisree-ragavi-j"),
     );
+    expect(screen.queryByText("Phone")).not.toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: /phone/i })).not.toBeInTheDocument();
+    expect(document.querySelector('a[href^="tel:"]')).not.toBeInTheDocument();
     expect(screen.queryByRole("link", { name: /download resume/i })).not.toBeInTheDocument();
   });
 
